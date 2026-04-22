@@ -1,12 +1,12 @@
 # 💊 Pharmacy Stock & Billing Management System
 
-## 📌 Description
+##  Description
 This project is a **Pharmacy Stock & Billing Database System** built using **MySQL/MariaDB**.  
 It manages medicine inventory, billing, and returns with a strong focus on **batch-wise tracking** and **expiry management**.
 
 ---
 
-## 🚀 Features
+##  Features
 - Batch-wise inventory management  
 - Expiry date tracking  
 - Customer billing system  
@@ -17,7 +17,7 @@ It manages medicine inventory, billing, and returns with a strong focus on **bat
 
 ---
 
-## 🧱 Database Schema
+##  Database Schema
 
 ### Main Tables
 - `Admin` – System users  
@@ -32,9 +32,9 @@ It manages medicine inventory, billing, and returns with a strong focus on **bat
 
 ---
 
-## ⚙️ How It Works
+##  How It Works
 
-### 📦 Stock Management
+###  Stock Management
 - Stock is maintained at the **batch level**
 - Each batch contains:
   - Manufacturing date  
@@ -43,17 +43,17 @@ It manages medicine inventory, billing, and returns with a strong focus on **bat
   - Selling price  
   - Available quantity  
 
-### 💵 Billing
+###  Billing
 - Sales are recorded in `Bill` and `Bill_Details`
 - Stock is automatically reduced using triggers  
 
-### 🔁 Returns
+###  Returns
 - **Sales Return:** Stock is added back  
 - **Supplier Return:** Stock is reduced  
 
 ---
 
-## 🛠️ Setup Instructions
+##  Setup Instructions
 
 ### Prerequisites
 - MySQL or MariaDB  
@@ -67,9 +67,9 @@ It manages medicine inventory, billing, and returns with a strong focus on **bat
 
 ---
 
-## 🧪 Usage
+##  Usage
 
-### 🔍 Check Near Expiry Medicines
+###  Check Near Expiry Medicines
 ```sql
 SELECT * FROM Batch
 WHERE expiry_date < CURDATE() + INTERVAL 30 DAY;
