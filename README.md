@@ -66,10 +66,3 @@ It manages medicine inventory, billing, and returns with a strong focus on **bat
 4. Database `pharmacy_db` will be created automatically  
 
 ---
-
-##  Usage
-
-###  Check Near Expiry Medicines
-```sql
-SELECT * FROM Batch
-WHERE expiry_date < CURDATE() + INTERVAL 30 DAY;
